@@ -15,6 +15,19 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
+.left {
+	width: 55%;
+	float: left;
+	margin-top: 100px;
+}
+
+.right {
+	width: 45%;
+	float: left;
+	margin-top: 110px;
+	padding: 0 30px;	
+}
 .title {
 	display: flex;
 	align-items: center;
@@ -39,18 +52,6 @@ body {
 	max-width: 25%;
 }
 
-.left {
-	width: 55%;
-	float: left;
-	margin-top: 120px;
-}
-
-.right {
-	width: 45%;
-	float: left;
-	margin-top: 130px;
-	padding: 0 30px;	
-}
 
 .vr-image {
 	position: relative;
