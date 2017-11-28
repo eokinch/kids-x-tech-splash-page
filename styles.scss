@@ -7,7 +7,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 body {
 	background: linear-gradient(to bottom, rgba(255,255,255, 0.5), rgba(255, 255, 255, 0.5)), url(assets/gaming-pattern.png);
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Avenir';
 	color: #4A4A4A;
 }
 
@@ -17,28 +17,26 @@ body {
 }
 
 .left {
-	width: 55%;
+	width: calc(50% - 40px);
 	float: left;
-	margin-top: 100px;
+	margin: 100px 20px 0 20px;
 }
 
 .right {
-	width: 45%;
+	width: calc(50% - 30px);
 	float: left;
-	margin-top: 110px;
-	padding: 0 30px;	
+	margin: 100px 20px 0 10px;
 }
+
 .title {
 	display: flex;
 	align-items: center;
-	margin: 0 20px;
 }
 
 .title h1 {
 	margin: 0;
-	margin-left: 20px;
 	align-self: flex-end;
-	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Avenir Next';
 	font-size: 3rem;
 	text-transform: uppercase;
 }
@@ -70,14 +68,6 @@ body {
 	width: 100%;
 	height: 100%;
 	background: rgba(112, 197, 213, 0.45);
-	// -webkit-box-shadow: 7px 7px 31px -10px rgba(112,197,213,1);
-	// -moz-box-shadow: 7px 7px 31px -10px rgba(112,197,213,1);
-	// box-shadow: 7px 7px 31px -10px rgba(112,197,213,1);
-}
-
-.description {
-	margin-left: 25px;
-	padding-right: 30px;
 }
 
 .description p {
@@ -193,32 +183,30 @@ nav a:hover, nav a:focus {
 
 footer {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	align-items: center;
-	margin-right: 10px;
-	text-transform: uppercase;
 }
 
-footer img {
-	width: 75px;
-	height: 75px;
-	margin-left: 15px;
+footer a {
+	margin-left: 5px;
+	text-transform: none;
+	color:  #70C5D5;
+	text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+	color: #4A4A4A;
 }
 
 @media (max-width: 975px) {
-	
-	.left, .right {
-		width: 50%;
-	}
 
 	.description {
 		padding-right: 0;
 	}
 
-	.right {
-		margin-top: 150px;
-		padding: 0 20px;
-	}
+	// .right {
+	// 	margin-top: 150px;
+	// }
 
 	.title h1 {
 		font-size: 2.5rem;
@@ -226,13 +214,13 @@ footer img {
 }
 
 @media (max-width: 768px) {
-	.left, .right {
+	.left {
 		float: none;
-		width: 100%;
+		width: calc(100% - 40px);
 	}
 
-	.description {
-		margin-right: 25px;
+	.right {
+		display: none;
 	}
 }
 
@@ -247,14 +235,6 @@ footer img {
 		font-size: 2.1rem;
 	}
 
-	.description {
-		padding: 0;
-		margin: 0 20px 0 25px;
-	}
-
-	.right {
-		display: none;
-	}
 
 	.mail-main {
 		padding: 10px 20px;
