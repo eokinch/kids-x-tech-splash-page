@@ -159,7 +159,6 @@ header {
     width: 100px; }
 
 .connect-links a {
-  display: block;
   color: #70C5D5;
   text-decoration: none;
   margin: 0 5px;
@@ -219,11 +218,15 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 75px 40px 0px 40px; }
+  margin-top: 75px; }
   footer p {
     margin-left: 5px; }
 
@@ -344,6 +347,8 @@ nav a:hover, nav a:focus {
     margin-top: 10px; } }
 
 @media (max-width: 768px) {
+  .connect-links a {
+    display: block; }
   h1 {
     font-size: 3rem; }
   .description {
@@ -383,8 +388,4 @@ nav a:hover, nav a:focus {
   nav a {
     font-size: 0.9rem; }
   footer {
-    margin: 10px 0;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+    margin: 10px 0; } }
